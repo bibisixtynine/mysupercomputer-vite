@@ -1,0 +1,175 @@
+/* mysupercomputer css */
+
+/* structure :
+- un div 'container' qui contient :
+  -> un div 'view', le résultat de l'exec du code
+  -> un div 'editor', l'éditeur de code
+  -> un div 'screenShareSlider' qui agit comme
+  un slider permettant de répartir l'espace
+  du div 'view' vs 'editor'
+*/
+html,body {
+
+  /*-webkit-text-size-adjust: 100%;*/
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding:0px;
+  margin: 0px;
+  user-select: none;
+  touch-action: none;
+  background-color: black;
+
+}
+
+input {
+  pointer-events:auto
+}
+
+#container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  
+  /*background-color: blue;*/
+}
+
+#view {
+  position: fixed;
+  top: 0px;
+  left: 50vw;
+  width: 50vw;
+  height: 100%;
+
+  overflow: auto;
+  /*background-color: orange;*/
+}
+
+#editor-container {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 50vw;
+  height: 100%;
+  overflow: auto;
+
+  -webkit-tap-highlight-color: blue;
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+#screenShareSlider {
+  text-align: center;
+  line-height: 30px;
+
+  font-weight: 600;
+  background-color: orange;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 5px;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  cursor: move;
+  z-index: 1000;
+}
+
+/* html color tag shortcut... so
+<bleu>Hello <red>World
+is valid :)
+*/
+
+vert {
+  color: green;
+}
+
+rouge {
+  color: red;
+}
+
+jaune {
+  color: yellow;
+}
+
+orange {
+  color: orange;
+}
+
+rose {
+  color: pink;
+}
+
+bleu {
+  color: blue;
+}
+
+gris {
+  color: gray;
+}
+
+blanc {
+  color: white;
+}
+
+violet {
+  color: violet;
+}
+
+olive {
+  color: olive;
+}
+
+turquoise {
+  color: turquoise;
+}
+
+avoine {
+  color: wheat;
+}
+
+saumon {
+  color: salmon;
+}
+
+peche {
+  color: peachPuff;
+}
+
+orangeRouge {
+  color: OrangeRed;
+}
+
+navy {
+  color: navy;
+}
+
+ivoire {
+  color: ivory;
+}
+
+or {
+  color: gold;
+}
+
+chocolat {
+  color: chocolate;
+}
+
+marron {
+  color: brown;
+}
+
+noir {
+  color: black;
+}
+
+beige {
+  color: beige;
+}
